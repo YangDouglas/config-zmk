@@ -32,7 +32,7 @@ behaviors {
 
             bindings = <
 &kp F4     &kp N1      &kp N2     &kp N3        &kp N4        &kp N5                  &kp N6     &kp N7       &kp N8       &kp N9        &kp N0         &to 0
-&kp TAB    &hm LGUI Q  &kp W      &kp F         &kp P         &kp B                   &kp J      &kp L        &kp U        &kp Y         &hm RGUI SQT   &kp BSPC
+&kp TAB    &hm LGUI Q  &kp W      &kp F         &kp P         &kp B                   &kp J      &kp L        &kp U        &kp Y         &hm RGUI SQT   &kp MINUS
 &kp LCTRL  &kp A       &kp R      &hm LCTRL S   &hm LSHIFT T  &kp G                   &kp M      &hm RSHIFT N &hm RCTRL E  &kp I         &kp O          &kp SEMI
 &sk LSHFT  &kp Z       &hm LALT X  &kp C         &kp D         &kp V  &to 2 &to 3  &kp K      &kp H        &kp COMMA    &hm RALT DOT  &kp FSLH       &sk RSHFT
                                   &kp LSHIFT    &kp ESC       &kp SPACE  &kp TAB   &kp RET  &kp BSPC   &kp DEL      &kp RSHIFT
