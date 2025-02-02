@@ -9,6 +9,21 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 
+&mt {
+    tapping-term-ms = <150>;
+};
+
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -21,11 +36,11 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
             bindings = <
-&kp ESC   &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                     &kp N6 &kp N7   &kp N8    &kp N9  &kp N0   &kp GRAVE
-&kp TAB   &kp Q  &kp W  &kp E    &kp R    &kp T                      &kp Y  &kp U    &kp I     &kp O   &kp P    &kp MINUS
-&kp LCTRL &kp A  &kp S  &kp D    &kp F    &kp G                      &kp H  &kp J    &kp K     &kp L   &kp SEMI &kp SQT
-&kp LSHFT &kp Z  &kp X  &kp C    &kp V    &kp B  &kp LBKT   &kp RBKT &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                        &kp LALT &kp LGUI &mo 1  &kp SPACE  &kp RET  &mo 2  &kp BSPC &kp RGUI
+&kp F4     &kp N1      &kp N2     &kp N3        &kp N4    &kp N5                  &kp N6     &kp N7       &kp N8       &kp N9   &kp N0          &kp DEL
+&kp TAB    &hm LGUI Q  &kp W      &kp F         &kp P     &kp B                   &kp J      &kp L        &kp U        &kp Y    &hm RGUI SQT    &kp BSPC
+&kp LCTRL  &kp A       &kp R      &hm LCTRL S   &hm LSHIFT T     &kp G            &kp M      &hm RSHIFT N &hm RCTRL E  &kp I    &kp O           &kp SEMI
+&sk LSHFT  &kp Z       &hm LALT   &kp C         &kp D     &kp V      &kp RET      &kp RET    &kp K        &kp H        &kp COMMA    &hm RALT DOT    &kp FSLH   &sk RSHFT
+                                &kp LSHIFT  &kp ESC  &kp SPACE  &kp TAB   &kp RET  &kp BSPC  &kp DEL  &kp RSHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
