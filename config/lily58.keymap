@@ -40,20 +40,20 @@
 keymap {
         compatible = "zmk,keymap";
 
-        HOME {
+        home_layer {
             display-name = "Home"
             bindings = <
 &kp F4     &kp N1      &kp N2     &kp N3        &kp N4        &kp N5                         &kp N6     &kp N7       &kp N8       &kp N9        &kp N0         &to HOME
 &kp TAB    &hm LGUI Q  &kp W      &kp F         &kp P         &kp B                          &kp J      &kp L        &kp U        &kp Y         &hm RGUI SQT   &kp MINUS
 &kp LCTRL  &kp A       &kp R      &hm LCTRL S   &hm LSHIFT T  &kp G                          &kp M      &hm RSHIFT N &hm RCTRL E  &kp I         &kp O          &kp SEMI
-&sk LSHFT  &lt MOUSE Z &hm LALT X  &kp C         &kp D        &kp V      &to SEL   &kp PSCRN &kp K      &kp H        &kp COMMA    &hm RALT DOT  &lt MOUSE FSLH &sk RSHFT
+&kp LSHFT  &lt MOUSE Z &hm LALT X  &kp C         &kp D        &kp V      &to SEL   &kp PSCRN &kp K      &kp H        &kp COMMA    &hm RALT DOT  &lt MOUSE FSLH &kp RSHFT
                     &lt WINSYS CAPS    &mt LSHIFT ESC   &lt NAV SPACE  &lt NUMSYM TAB     &lt NUMSYM RET   &lt NAV BSPC   &mt RSHIFT DEL      &to MOUSE 
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        NAV {
+        nav_layer {
             display-name = "NAV"
             bindings = <
 &kp F1    &kp F2 &kp F3 &kp F4  &kp F5  &kp F6                           &kp F1    &kp F2 &kp F3 &kp F4  &kp F5  &kp F6
@@ -66,7 +66,7 @@ keymap {
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        NUMSYM {
+        numsym_layer {
             display-name = "numsym"
             bindings = <
 &kp GRAVE &kp TILDE &kp BSLH &kp PIPE  &kp FSLH  &trans                       &kp ESC      &kp LPAR    &kp RPAR    &kp FSLH   &kp KP_EQUAL    &to HOME
@@ -79,7 +79,7 @@ keymap {
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        MOUSE {
+        mouse_layer {
             display-name = "mouse"
 // ------------------------------------------------------------------------------------------------------------
 // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
@@ -98,7 +98,7 @@ keymap {
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        SEL {
+        selection_layer {
             display-name = "SEL"
 // ------------------------------------------------------------------------------------------------------------
 // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
@@ -117,7 +117,7 @@ keymap {
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        CLEAN {
+        clean_colemak_layer {
             display-name = "clean"
 // ------------------------------------------------------------------------------------------------------------
 // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
@@ -136,7 +136,7 @@ keymap {
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        QWERTY {
+        QWERTY_layer {
             display-name = "QWERTY"
 // ------------------------------------------------------------------------------------------------------------
 // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   `   |
@@ -154,7 +154,7 @@ keymap {
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        WINSYS {
+        WINSYS_layer {
             display-name = "winsys"
 // ------------------------------------------------------------------------------------------------------------
 // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
@@ -173,7 +173,7 @@ keymap {
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-         CONFIG {
+         CONFIG_layer {
          display-name = "CONFIG"
 // ------------------------------------------------------------------------------------------------------------
 // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
