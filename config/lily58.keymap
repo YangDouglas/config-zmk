@@ -36,10 +36,10 @@ behaviors {
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
             bindings = <
-&kp F4     &kp N1      &kp N2     &kp N3        &kp N4        &kp N5                  &kp N6     &kp N7       &kp N8       &kp N9        &kp N0         &kp DEL
+&kp F4     &kp N1      &kp N2     &kp N3        &kp N4        &kp N5                  &kp N6     &kp N7       &kp N8       &kp N9        &kp N0         &to 0
 &kp TAB    &hm LGUI Q  &kp W      &kp F         &kp P         &kp B                   &kp J      &kp L        &kp U        &kp Y         &hm RGUI SQT   &kp BSPC
 &kp LCTRL  &kp A       &kp R      &hm LCTRL S   &hm LSHIFT T  &kp G                   &kp M      &hm RSHIFT N &hm RCTRL E  &kp I         &kp O          &kp SEMI
-&sk LSHFT  &kp Z       &hm LALT X  &kp C         &kp D         &kp V  &kp RET &kp RET  &kp K      &kp H        &kp COMMA    &hm RALT DOT  &kp FSLH       &sk RSHFT
+&sk LSHFT  &kp Z       &hm LALT X  &kp C         &kp D         &kp V  &to 1 &to 2  &kp K      &kp H        &kp COMMA    &hm RALT DOT  &kp FSLH       &sk RSHFT
                                   &kp LSHIFT    &kp ESC       &kp SPACE  &kp TAB   &kp RET  &kp BSPC   &kp DEL      &kp RSHIFT
             >;
 
@@ -54,7 +54,7 @@ behaviors {
 // |       |     |     |      |      |      |        |  |       |      |  _    |  +    |  {   |   }   |  "|"  |
 //                     |      |      |      |        |  |       |      |       |       |
             bindings = <
-&bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                 &trans    &trans    &trans    &trans    &trans    &trans
+&bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                 &trans    &trans    &trans    &trans    &trans    &to 0
 &kp F1     &kp F2           &kp F3            &kp F4            &kp F5       &kp F6                       &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
 &kp GRAVE  &kp EXCL         &kp AT            &kp HASH          &kp DOLLAR   &kp PRCNT                    &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR  &kp TILDE
 &trans     &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans       &trans    &trans   &trans    &trans    &kp MINUS &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE
@@ -72,7 +72,7 @@ behaviors {
 // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
 //                     |      |      |      |        |  |       |      |       |       |
             bindings = <
-&trans    &trans &trans &trans  &trans  &trans                       &trans      &trans    &trans    &trans   &trans    &trans
+&trans    &trans &trans &trans  &trans  &trans                       &trans      &trans    &trans    &trans   &trans    &to 0
 &kp GRAVE &kp N1 &kp N2 &kp N3  &kp N4  &kp N5                       &kp N6      &kp N7    &kp N8    &kp N9   &kp N0    &trans
 &kp F1    &kp F2 &kp F3 &kp F4  &kp F5  &kp F6                       &trans      &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &trans
 &kp F7    &kp F8 &kp F9 &kp F10 &kp F11 &kp F12   &trans   &trans    &kp KP_PLUS &kp MINUS &kp EQUAL &kp LBKT &kp RBKT  &kp BSLH
