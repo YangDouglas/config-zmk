@@ -85,8 +85,8 @@ keymap {
             display-name = "numsym";
             bindings = <
 &kp GRAVE &kp TILDE &kp BSLH &kp PIPE  &kp FSLH  &trans                       &kp ESC      &kp LPAR    &kp RPAR    &kp FSLH   &kp EQUAL    &to BASE
-&kp LS(LC(A)) &kp EXCL &kp AT &kp POUND  &kp DLLR  &kp PRCNT                      &kp DEL      &kp KP_N7    &kp KP_N8    &kp KP_N9   &kp KP_MINUS    &RC(LEFT)
-&kp LS(LC(H))  &kp CARET &kp AMPS &kp STAR  &kp LPAR  &kp RPAR                     &kp BSPC      &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp KP_PLUS &RC(RIGHT)
+&kp LS(LC(A)) &kp EXCL &kp AT &kp POUND  &kp DLLR  &kp PRCNT                      &kp DEL      &kp KP_N7    &kp KP_N8    &kp KP_N9   &kp KP_MINUS    &kp RC(LEFT)
+&kp LS(LC(H))  &kp CARET &kp AMPS &kp STAR  &kp LPAR  &kp RPAR                     &kp BSPC      &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp KP_PLUS &kp RC(RIGHT)
 &kp LT    &kp GT &kp LBRC &kp RBRC &kp LBKT &kp RBKT           &to BASE   &kp LEFT     &kp RIGHT &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp TAB  &kp RET
                         &trans  &trans  &trans            &trans   &trans    &trans      &kp KP_N0    &kp KP_DOT
             >;
