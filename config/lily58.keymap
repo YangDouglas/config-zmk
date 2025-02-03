@@ -45,10 +45,10 @@ keymap {
         home_layer {
             display-name = "Home";
             bindings = <
-&kp F4     &kp N1      &kp N2     &kp N3        &kp N4        &kp N5                         &kp N6     &kp N7       &kp N8       &kp N9        &kp N0         &to BASE
-&kp TAB    &hm LGUI Q  &kp W      &kp F         &kp P         &kp B                          &kp J      &kp L        &kp U        &kp Y         &hm RGUI SQT   &kp MINUS
-&kp LCTRL  &kp A       &kp R      &hm LCTRL S   &hm LSHIFT T  &kp G                          &kp M      &hm RSHIFT N &hm RCTRL E  &kp I         &kp O          &kp SEMI
-&kp LSHFT  &lt MOUSE Z &hm LALT X  &kp C         &kp D        &kp V      &to SEL   &kp PSCRN &kp K      &kp H        &kp COMMA    &hm RALT DOT  &lt MOUSE FSLH &kp RSHFT
+&kp F4     &kp N1      &kp N2     &kp N3        &kp N4        &kp N5                                     &kp N6     &kp N7       &kp N8       &kp N9        &kp N0         &to BASE
+&kp TAB    &hm LGUI Q  &kp W      &kp F         &kp P         &kp B                                      &kp J      &kp L        &kp U        &kp Y         &hm RGUI SQT   &kp MINUS
+&kp LCTRL  &kp A       &kp R      &hm LCTRL S   &hm LSHIFT T  &kp G                                      &kp M      &hm RSHIFT N &hm RCTRL E  &kp I         &kp O          &kp SEMI
+&kp LSHFT  &lt MOUSE Z &hm LALT X  &kp C         &kp D        &kp V      &to SEL   &mt LS(LC(S)) PSCRN     &kp K      &kp H        &kp COMMA    &hm RALT DOT  &lt MOUSE FSLH &kp RSHFT
                     &lt WINSYS CAPS    &mt LSHIFT ESC   &lt NAV SPACE  &lt NUMSYM TAB     &lt NUMSYM RET   &lt NAV BSPC   &mt RSHIFT DEL      &to MOUSE 
             >;
 
@@ -60,8 +60,8 @@ keymap {
             bindings = <
 &kp F1    &kp F2 &kp F3 &kp F4  &kp F5  &kp F6                           &kp F1    &kp F2 &kp F3 &kp F4  &kp F5  &kp F6
 &kp F7    &kp F8 &kp F9 &kp F10 &kp F11 &kp F12                          &kp F7    &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-&trans      &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &trans                &trans    &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &trans
-&trans &kp HOME &kp PG_DN &kp PG_UP &kp END  &trans   &to BASE   &trans    &trans &kp HOME &kp PG_DN &kp PG_UP &kp END  &trans
+&kp LC(LEFT)    &kp LEFT  &kp DOWN  &kp UP   &mt LSHFT RIGHT &kp LC(RIGHT)                &kp LC(LEFT)    &mt RSHFT LEFT  &kp DOWN  &kp UP   &kp RIGHT &kp LC(RIGHT)
+&kp LC(HOME) &kp HOME &kp PG_DN &kp PG_UP &kp END  &kp LC(END)    &kp LC(HOME) &kp HOME &kp PG_DN &kp PG_UP &kp END  &kp LC(END)
                         &trans  &trans  &trans    &trans   &trans    &trans      &trans    &trans
             >;
 
