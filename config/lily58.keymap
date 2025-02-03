@@ -61,7 +61,7 @@ keymap {
 &kp F4     &kp N1      &kp N2     &kp N3        &kp N4        &kp CAPS                                     &kp N6     &kp N7       &kp N8       &kp N9        &kp N0         &to BASE
 &kp TAB    &hm LGUI Q  &kp W      &kp F         &kp P         &kp B                                      &kp J      &kp L        &kp U        &kp Y         &hm RGUI SQT   &kp MINUS
 &kp LCTRL  &kp A       &kp R      &hm LCTRL S   &hm LSHIFT T  &kp G                                      &kp M      &hm RSHIFT N &hm RCTRL E  &kp I         &kp O          &kp SEMI
-&kp LSHFT  &lt MOUSE Z &hm LALT X  &kp C         &kp D        &kp V      &to SEL   &mt LS(LG(S)) PSCRN     &kp K      &kp H        &kp COMMA    &hm RALT DOT  &lt MOUSE FSLH &kp RSHFT
+&kp LSHFT  &lt MOUSE Z &hm LALT X  &kp C         &kp D        &kp V      &to SEL   &mt LS(LG(S)) PSCRN     &kp K      &kp H        &kp COMMA    &hm RALT DOT  &lt MOUSE FSLH &em_dash
                     &lt WINSYS CLCK    &mt LSHIFT ESC   &lt NAV SPACE  &lt NUMSYM TAB     &lt NUMSYM RET   &lt NAV BSPC   &mt RSHIFT DEL      &lt WINSYS CLCK 
             >;
 
