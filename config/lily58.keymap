@@ -71,7 +71,7 @@ keymap {
             bindings = <
 &kp F1    &kp F2 &kp F3 &kp F4  &kp F5  &kp F6                                              &kp F1    &kp F2 &kp F3 &kp F4  &kp F5  &kp F6
 &kp F7    &mt LGUI F8 &kp F9 &kp F10 &kp F11 &kp F12                                             &kp F7    &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-&kp LC(LEFT)    &kp LA(LEFT)  &kp LA(DOWN)  &mt LCTRL LA(UP)   &mt LSHFT LA(RIGHT) &kp LC(RIGHT)                 &kp LC(LEFT)    &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &kp LC(RIGHT)
+&kp LA(F)    &kp LC(A)  &kp LC(R)  &mt LCTRL LC(S)   &mt LSHFT LA(LEFT) &kp LA(RIGHT)                 &kp LC(LEFT)    &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &kp LC(RIGHT)
 &kp LC(Y)    &kp LC(Z) &mt LALT LC(X) &kp LC(C) &kp LC(V) &kp LC(V)     &to BASE   &trans     &kp LC(HOME) &kp HOME &kp PG_DN &kp PG_UP &kp END  &kp LC(END)
                         &trans  &trans  &trans    &trans   &trans    &trans      &trans    &trans
             >;
@@ -105,7 +105,7 @@ keymap {
 &trans    &trans &msc SCRL_UP &mmv MOVE_Y(-1800)  &msc SCRL_DOWN  &msc SCRL_RIGHT                                        &trans &msc SCRL_UP &mmv MOVE_Y(-1800)  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans
 &trans    &mmv MOVE_LEFT  &mmv MOVE_X(-1800) &mmv MOVE_Y(1800)  &mmv MOVE_X(1800)  &mmv MOVE_RIGHT                       &mmv MOVE_LEFT  &mmv MOVE_X(-1800) &mmv MOVE_Y(1800)  &mmv MOVE_X(1800)  &mmv MOVE_RIGHT  &trans
 &trans    &trans &trans &mmv MOVE_DOWN  &trans  &trans                                           &to BASE   &trans       &trans    &trans &mmv MOVE_DOWN  &trans &trans &to BASE
-                        &trans  &mkp LCLK    &mkp RCLK      &mkp MCLK   &mkp LCLK    &mkp RCLK      &mkp MCLK    &kp KP_DOT
+                        &trans  &mkp MCLK    &mkp LCLK      &mkp RCLK   &mkp LCLK    &mkp RCLK      &mkp MCLK    &kp KP_DOT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
