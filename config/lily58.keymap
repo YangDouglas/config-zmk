@@ -20,7 +20,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
-
+#include <dt-bindings/zmk/pointing.h>
 
 
 &mt {
@@ -59,7 +59,7 @@ keymap {
 &kp F4     &kp N1      &kp N2     &kp N3        &kp N4        &kp N5                                     &kp N6     &kp N7       &kp N8       &kp N9        &kp N0         &to BASE
 &kp TAB    &hm LGUI Q  &kp W      &kp F         &kp P         &kp B                                      &kp J      &kp L        &kp U        &kp Y         &hm RGUI SQT   &kp MINUS
 &kp LCTRL  &kp A       &kp R      &hm LCTRL S   &hm LSHIFT T  &kp G                                      &kp M      &hm RSHIFT N &hm RCTRL E  &kp I         &kp O          &kp SEMI
-&kp LSHFT  &lt MOUSE Z &hm LALT X  &kp C         &kp D        &kp V      &to SEL   &mt LS(LG(S)) PSCRN     &kp K      &kp H        &kp COMMA    &hm RALT DOT  &lt MOUSE FSLH &em_dash
+&kp LSHFT  &lt MOUSE Z &hm LALT X  &kp C         &kp D        &kp V      &to SEL   &mt LS(LG(S)) PSCRN     &kp K      &kp H        &kp COMMA    &hm RALT DOT  &lt MOUSE FSLH &to MOUSE
                     &lt WINSYS CLCK    &mt LSHIFT ESC   &lt NAV SPACE  &lt NUMSYM TAB     &lt NUMSYM RET   &lt NAV BSPC   &mt RSHIFT DEL      &lt WINSYS CLCK 
             >;
 
@@ -83,8 +83,8 @@ keymap {
             display-name = "numsym";
             bindings = <
 &kp GRAVE &kp TILDE &kp BSLH &kp PIPE  &kp FSLH  &trans                       &kp ESC      &kp LPAR    &kp RPAR    &kp FSLH   &kp EQUAL    &to BASE
-&kp LS(LC(A)) &kp EXCL &kp AT &kp POUND  &kp DLLR  &kp PRCNT                      &kp DEL      &kp KP_N7    &kp KP_N8    &kp KP_N9   &kp KP_MINUS    &kp RC(LEFT)
-&kp LS(LC(H))  &kp CARET &kp AMPS &kp STAR  &kp LPAR  &kp RPAR                     &kp BSPC      &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp KP_PLUS &kp RC(RIGHT)
+&kp LS(LC(H)) &kp EXCL &kp AT &kp POUND  &kp DLLR  &kp PRCNT                      &kp DEL      &kp KP_N7    &kp KP_N8    &kp KP_N9   &kp KP_MINUS    &kp RC(LEFT)
+&kp LS(LC(A))  &kp CARET &kp AMPS &kp STAR  &kp LPAR  &kp RPAR                     &kp BSPC      &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp KP_PLUS &kp RC(RIGHT)
 &kp LT    &kp GT &kp LBRC &kp RBRC &kp LBKT &kp RBKT           &to BASE   &kp LEFT     &kp RIGHT &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp TAB  &kp RET
                         &trans  &trans  &trans            &trans   &trans    &trans      &kp KP_N0    &kp KP_DOT
             >;
@@ -101,11 +101,11 @@ keymap {
 // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
 //                     |      |      |      |        |  |       |      |       |       |
             bindings = <
-&trans    &trans &trans &trans  &trans  &trans                       &kp ESC      &kp LPAR    &kp RPAR    &kp FSLH   &kp KP_EQUAL    &to BASE
-&kp GRAVE &kp N1 &kp N2 &kp N3  &kp N4  &kp N5                       &kp DEL      &kp KP_N7    &kp KP_N8    &kp KP_N9   &kp KP_MINUS    &trans
-&kp F1    &kp F2 &kp F3 &kp F4  &kp F5  &kp F6                       &kp BSPC      &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp KP_PLUS &trans
-&kp F7    &kp F8 &kp F9 &kp F10 &kp F11 &kp F12   &to BASE   &trans    &kp KP_PLUS &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp TAB  &kp RET
-                        &trans  &trans  &trans    &trans   &trans    &trans      &kp KP_N0    &kp KP_DOT
+&trans    &trans &trans &trans  &trans  &trans                       &trans    &trans &trans  &trans  &trans &trans
+&trans    &trans &trans &trans  &trans  &trans                       &trans    &trans &mmv MOVE_UP &trans  &trans  &trans
+&trans    &trans &trans &trans  &trans  &trans                       &trans    &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT  &trans  &trans
+&trans    &trans &trans &trans  &trans  &trans   &to BASE   &trans   &trans    &trans &trans &trans  &trans  &trans
+                        &trans  &trans  &trans   &trans   &mkp LCLK    &mkp RCLK      &mkp MCLK    &kp KP_DOT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
