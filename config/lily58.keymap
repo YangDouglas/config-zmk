@@ -176,7 +176,7 @@ keymap {
 // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
 //                     |      |      |      |        |  |       |      |       |       |
             bindings = <
-&trans    &trans &trans &trans  &trans  &trans                       &trans      &trans    &trans    &trans   &trans    &to BASE
+&trans    &kp LC(LS(N1)) &kp LC(LS(N2)) &kp LC(LS(N3))  &kp LC(LS(N4))  &kp LC(LS(N5))                       &trans      &trans    &trans    &trans   &trans    &to BASE
 &trans &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP  &kp C_BRI_DN  &kp C_BRI_UP         &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP  &kp C_BRI_DN  &kp C_BRI_UP    &trans
 &kp C_PREV    &kp C_RW &kp C_PP &kp C_STOP  &kp C_FF  &kp C_NEXT                       &kp C_PREV    &kp C_RW &kp C_PP &kp C_STOP  &kp C_FF  &kp C_NEXT
 &kp LC(Y)    &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &kp LC(V)   &to BASE   &trans    &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &kp LC(V)  &trans
