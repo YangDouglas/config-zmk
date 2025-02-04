@@ -101,8 +101,8 @@ keymap {
 // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
 //                     |      |      |      |        |  |       |      |       |       |
             bindings = <
-&trans    &trans &trans &mmv MOVE_UP  &trans  &trans                                                                       &trans &trans &mmv MOVE_UP  &trans  &trans &trans
-&trans    &trans &trans &mmv MOVE_Y(-1800)  &trans  &trans                                                                  &trans &trans &mmv MOVE_Y(-1800)  &trans  &trans  &trans
+&trans    &kp LA(LEFT)  &kp LA(RIGHT) &mmv MOVE_UP  &msc SCRL_UP  &msc SCRL_LEFT                                         &kp LA(LEFT)  &kp LA(RIGHT) &mmv MOVE_UP  &msc SCRL_UP  &msc SCRL_LEFT  &trans
+&trans    &trans &msc SCRL_UP &mmv MOVE_Y(-1800)  &msc SCRL_DOWN  &msc SCRL_RIGHT                                        &trans &msc SCRL_UP &mmv MOVE_Y(-1800)  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans
 &trans    &mmv MOVE_LEFT  &mmv MOVE_X(-1800) &mmv MOVE_Y(1800)  &mmv MOVE_X(1800)  &mmv MOVE_RIGHT                       &mmv MOVE_LEFT  &mmv MOVE_X(-1800) &mmv MOVE_Y(1800)  &mmv MOVE_X(1800)  &mmv MOVE_RIGHT  &trans
 &trans    &trans &trans &mmv MOVE_DOWN  &trans  &trans                                           &to BASE   &trans       &trans    &trans &mmv MOVE_DOWN  &trans &trans &to BASE
                         &trans  &mkp LCLK    &mkp RCLK      &mkp MCLK   &mkp LCLK    &mkp RCLK      &mkp MCLK    &kp KP_DOT
