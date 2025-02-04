@@ -101,11 +101,11 @@ keymap {
 // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
 //                     |      |      |      |        |  |       |      |       |       |
             bindings = <
-&trans    &trans &trans &trans  &trans  &trans                       &trans    &trans &mmv MOVE_X(-1800)  &trans  &trans &trans
-&trans    &trans &trans &trans  &trans  &trans                       &trans    &trans &mmv MOVE_UP &trans  &trans  &trans
-&trans    &trans &trans &trans  &trans  &trans                       &trans    &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT  &trans  &trans
-&trans    &trans &trans &trans  &trans  &trans   &to BASE   &trans   &trans    &trans &trans &trans  &trans  &trans
-                        &trans  &trans  &trans   &trans   &mkp LCLK    &mkp RCLK      &mkp MCLK    &kp KP_DOT
+&trans    &trans &trans &mmv MOVE_UP  &trans  &trans                                                                       &trans &trans &mmv MOVE_UP  &trans  &trans &trans
+&trans    &trans &trans &mmv MOVE_Y(-1800)  &trans  &trans                                                                  &trans &trans &mmv MOVE_Y(-1800)  &trans  &trans  &trans
+&trans    &mmv MOVE_LEFT  &mmv MOVE_X(-1800) &mmv MOVE_Y(1800)  &mmv MOVE_X(1800)  &mmv MOVE_RIGHT                       &mmv MOVE_LEFT  &mmv MOVE_X(-1800) &mmv MOVE_Y(1800)  &mmv MOVE_X(1800)  &mmv MOVE_RIGHT  &trans
+&trans    &trans &trans &mmv MOVE_DOWN  &trans  &trans                                           &to BASE   &trans       &trans    &trans &mmv MOVE_DOWN  &trans &trans &to BASE
+                        &trans  &mkp LCLK    &mkp RCLK      &mkp MCLK   &mkp LCLK    &mkp RCLK      &mkp MCLK    &kp KP_DOT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
